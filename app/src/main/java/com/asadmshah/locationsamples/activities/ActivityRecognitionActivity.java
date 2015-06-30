@@ -1,4 +1,4 @@
-package com.asadmshah.locationsamples;
+package com.asadmshah.locationsamples.activities;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -14,6 +14,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.asadmshah.locationsamples.R;
+import com.asadmshah.locationsamples.services.ActivityDetectionIntentService;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;

@@ -1,9 +1,11 @@
-package com.asadmshah.locationsamples;
+package com.asadmshah.locationsamples.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.asadmshah.locationsamples.R;
 
 public class GeofencingActivity extends AppCompatActivity {
 

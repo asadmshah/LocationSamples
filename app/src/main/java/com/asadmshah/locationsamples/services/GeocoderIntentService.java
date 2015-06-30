@@ -1,4 +1,4 @@
-package com.asadmshah.locationsamples;
+package com.asadmshah.locationsamples.services;
 
 import android.app.IntentService;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.location.Geocoder;
 import android.os.Bundle;
 import android.os.ResultReceiver;
 import android.util.Log;
+
+import com.asadmshah.locationsamples.R;
 
 import java.util.List;
 import java.util.Locale;
