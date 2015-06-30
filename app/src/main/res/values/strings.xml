@@ -18,4 +18,16 @@
 
     <string name="no_location_found">No location found</string>
 
+    <string name="in_vehicle">In a vehicle</string>
+    <string name="on_bicycle">On a bicycle</string>
+    <string name="on_foot">On foot</string>
+    <string name="running">Running</string>
+    <string name="still">Still</string>
+    <string name="tilting">Tilting</string>
+    <string name="unknown">Unknown</string>
+    <string name="walking">Walking</string>
+    <string name="format_activity_name_and_change">%1$s - %2$d</string>
+
+    <string name="activity_detection_started">Activity Detection Started</string>
+
 </resources>
