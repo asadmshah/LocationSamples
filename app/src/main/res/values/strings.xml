@@ -11,4 +11,11 @@
     <string name="title_activity_geofencing">GeofencingActivity</string>
     <string name="title_activity_location_data">LocationDataActivity</string>
 
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+
+    <string name="no_location_found">No location found</string>
+
 </resources>

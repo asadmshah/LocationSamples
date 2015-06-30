@@ -2,6 +2,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context="com.asadmshah.locationsamples.LocationDataActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:useDefaultMargins="true" >
+
+        <TextView
+            android:text="@string/latitude" />
+
+        <TextView
+            android:id="@+id/latitude"
+            tools:text="78.34" />
+
+        <TextView
+            android:text="@string/longitude" />
+
+        <TextView
+            android:id="@+id/longitude"
+            tools:text="33.86" />
+
+        <TextView
+            android:text="@string/city" />
+
+        <TextView
+            android:id="@+id/city"
+            tools:text="City Name" />
+
+        <TextView
+            android:text="@string/country"/>
+
+        <TextView
+            android:id="@+id/country"
+            tools:text="Country Name"/>
+
+    </GridLayout>
 
 </RelativeLayout>
