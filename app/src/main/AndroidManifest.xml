@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ActivityRecognitionActivity"
+            android:label="@string/title_activity_activity_recognition"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asadmshah.locationsamples.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GeofencingActivity"
+            android:label="@string/title_activity_geofencing"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asadmshah.locationsamples.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LocationDataActivity"
+            android:label="@string/title_activity_location_data" >
+        </activity>
     </application>
 
 </manifest>

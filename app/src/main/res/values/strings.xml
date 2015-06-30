@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">LocationSamples</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="location">Location</string>
+    <string name="activity_recognition">Activity Recognition</string>
+    <string name="geofencing">Geofencing</string>
+
+    <string name="title_activity_activity_recognition">ActivityRecognitionActivity</string>
+    <string name="title_activity_geofencing">GeofencingActivity</string>
+    <string name="title_activity_location_data">LocationDataActivity</string>
+
 </resources>

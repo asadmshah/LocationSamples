@@ -1,37 +1,51 @@
 package com.asadmshah.locationsamples;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(getString(R.string.app_name));
+        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+        setSupportActionBar(toolbar);
+
+        findViewById(R.id.button_location).setOnClickListener(this);
+        findViewById(R.id.button_activity_recognition).setOnClickListener(this);
+        findViewById(R.id.button_geofencing).setOnClickListener(this);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        return false;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    public void onClick(View v) {
+        Intent intent;
+        switch (v.getId()) {
+            case R.id.button_location:
+                intent = new Intent(this, LocationDataActivity.class);
+                break;
+            case R.id.button_activity_recognition:
+                intent = new Intent(this, ActivityRecognitionActivity.class);
+                break;
+            case R.id.button_geofencing:
+                intent = new Intent(this, GeofencingActivity.class);
+                break;
+            default:
+                return;
         }
-
-        return super.onOptionsItemSelected(item);
+        startActivity(intent);
     }
+
 }
