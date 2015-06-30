@@ -30,4 +30,10 @@
 
     <string name="activity_detection_started">Activity Detection Started</string>
 
+    <string name="geofence_title">Geofence Zone</string>
+    <string name="geofence_entered">Entered Geofence Zone</string>
+    <string name="geofence_exited">Exited Geofence Zone</string>
+    <string name="geofence_notification_title">Geofence Notification</string>
+    <string name="geofence_notification_text">%1$s: %1$s</string>
+
 </resources>
